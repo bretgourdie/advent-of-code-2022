@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2022.Day01
+﻿namespace advent_of_code_2022.Day01
 {
     internal class Day01 : AdventSolution
     {

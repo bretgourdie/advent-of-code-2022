@@ -6,6 +6,10 @@
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
+
+    <RootNamespace>$(MSBuildProjectName.Replace("-", "_"))</RootNamespace>
+
+    <AssemblyName>$(MSBuildProjectName.Replace("-", "_"))</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

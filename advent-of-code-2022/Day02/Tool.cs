@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2022.Day02
+﻿namespace advent_of_code_2022.Day02
 {
     internal enum Tool
     {
