@@ -12,9 +12,9 @@ namespace advent_of_code_2022.Day03
 
         protected override long part1InputExpected => 7980;
 
-        protected override long part2ExampleExpected => throw new NotImplementedException();
+        protected override long part2ExampleExpected => 70;
 
-        protected override long part2InputExpected => throw new NotImplementedException();
+        protected override long part2InputExpected => 2881;
 
         protected override long part1Work(string[] input)
         {
@@ -47,7 +47,21 @@ namespace advent_of_code_2022.Day03
 
         protected override long part2Work(string[] input)
         {
-            throw new NotImplementedException();
+            long priority = 0;
+            var letters = getLetters();
+
+            for (int ii = 0; ii < input.Length; ii += 3)
+            {
+                var group = new Group(
+                    input[ii + 0],
+                    input[ii + 1],
+                    input[ii + 2]
+                );
+
+                priority += getPriority(group.Badge, letters);
+            }
+
+            return priority;
         }
     }
 }
